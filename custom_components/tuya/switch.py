@@ -425,10 +425,6 @@ SWITCHES: dict[str, tuple[SwitchEntityDescription, ...]] = {
     # Smart Water Timer
     "sfkzq": (
         SwitchEntityDescription(
-            key=DPCode.SWITCH,
-            translation_key="switch",
-        ),
-        SwitchEntityDescription(
             key=DPCode.SWITCH_1,
             name="Switch 1",
             icon="mdi:sprinkler-variant",
@@ -437,6 +433,12 @@ SWITCHES: dict[str, tuple[SwitchEntityDescription, ...]] = {
             key=DPCode.SWITCH_2,
             name="Switch 2",
             icon="mdi:sprinkler-variant",
+        ),
+        SwitchEntityDescription(
+            key=DPCode.WEATHER_SWITCH,
+            name="Weather switch",
+            icon="mdi:weather-windy",
+            entity_category=EntityCategory.CONFIG,
         ),
     ),
     # Irrigator

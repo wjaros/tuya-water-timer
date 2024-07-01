@@ -67,11 +67,6 @@ PLATFORMS = [
     Platform.SWITCH,
     Platform.VACUUM,
 ]
-
-class TuyaDeviceClass(StrEnum):
-    """Tuya specific device classes, used for translations."""
-
-    WORK_STATE = "tuya__work_state"
 class WorkMode(StrEnum):
     """Work modes."""
 

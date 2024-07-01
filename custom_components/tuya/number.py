@@ -67,6 +67,12 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
     # Smart Water Timer
     "sfkzq": (
         NumberEntityDescription(
+            key=DPCode.COUNTDOWN,
+            name="Countdown",
+            icon="mdi:timer",
+            entity_category=EntityCategory.CONFIG,
+        ),
+        NumberEntityDescription(
             key=DPCode.COUNTDOWN_1,
             name="Countdown 1",
             icon="mdi:timer",
