@@ -34,6 +34,7 @@ from .const import (
     TUYA_DISCOVERY_NEW,
     DPCode,
     DPType,
+    TuyaDeviceClass,
     UnitOfMeasurement,
 )
 
@@ -539,6 +540,24 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
     # Smart Water Timer
     "sfkzq": (
         # Total seconds of irrigation. Read-write value; the device appears to ignore the write action (maybe firmware bug)
+        TuyaSensorEntityDescription(
+            key=DPCode.WORK_STATE,
+            name="State",
+            device_class=TuyaDeviceClass.WORK_STATE,
+            entity_category=EntityCategory.DIAGNOSTIC,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.WORK_STATE_1,
+            name="State",
+            device_class=TuyaDeviceClass.WORK_STATE,
+            entity_category=EntityCategory.DIAGNOSTIC,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.WORK_STATE_2,
+            name="State",
+            device_class=TuyaDeviceClass.WORK_STATE,
+            entity_category=EntityCategory.DIAGNOSTIC,
+        ),
         TuyaSensorEntityDescription(
             key=DPCode.TIME_USE,
             translation_key="total_watering_time",

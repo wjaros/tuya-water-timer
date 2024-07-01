@@ -68,7 +68,10 @@ PLATFORMS = [
     Platform.VACUUM,
 ]
 
+class TuyaDeviceClass(StrEnum):
+    """Tuya specific device classes, used for translations."""
 
+    WORK_STATE = "tuya__work_state"
 class WorkMode(StrEnum):
     """Work modes."""
 
@@ -161,6 +164,8 @@ class DPCode(StrEnum):
     CONTROL_BACK = "control_back"
     CONTROL_BACK_MODE = "control_back_mode"
     COUNTDOWN = "countdown"  # Countdown
+    COUNTDOWN_1 = "countdown_1"  # Countdown
+    COUNTDOWN_2 = "countdown_2"  # Countdown
     COUNTDOWN_LEFT = "countdown_left"
     COUNTDOWN_SET = "countdown_set"  # Countdown setting
     CRY_DETECTION_SWITCH = "cry_detection_switch"
@@ -373,6 +378,9 @@ class DPCode(StrEnum):
     WIRELESS_ELECTRICITY = "wireless_electricity"
     WORK_MODE = "work_mode"  # Working mode
     WORK_POWER = "work_power"
+    WORK_STATE = "work_state"
+    WORK_STATE_1 = "work_state_1"
+    WORK_STATE_2 = "work_state_2"
 
 
 @dataclass
