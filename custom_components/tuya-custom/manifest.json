@@ -2,7 +2,7 @@
   "domain": "tuya",
   "name": "dupa",
   "version": "0.0.1",
-  "codeowners": ["@Tuya", "@zlinoliver", "@frenck", "@wjaros"],
+  "codeowners": ["@Tuya", "@zlinoliver", "@frenck"],
   "config_flow": true,
   "dependencies": ["ffmpeg"],
   "dhcp": [
