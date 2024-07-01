@@ -1,6 +1,6 @@
 {
   "domain": "tuya",
-  "name": "Tuya Custom",
+  "name": "dupa",
   "codeowners": ["@Tuya", "@zlinoliver", "@frenck", "@wjaros"],
   "config_flow": true,
   "dependencies": ["ffmpeg"],
