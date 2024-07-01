@@ -67,6 +67,8 @@ PLATFORMS = [
     Platform.SWITCH,
     Platform.VACUUM,
 ]
+
+
 class WorkMode(StrEnum):
     """Work modes."""
 
